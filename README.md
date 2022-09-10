@@ -1,16 +1,16 @@
 # NASA_API
 
-### Introduction
+## Introduction
 ***
 This project displays the NASA Astronomy Picture of the Day!
 
-### Technologies
+## Technologies
 ***
 * Python
 * HTML/CSS
 * Flask Web Framework
 
-### Launch
+## Launch
 ***
 To run this web application you must run 
 ```
