@@ -1,6 +1,6 @@
 # NASA_API
 ## Introduction
-**
+
 This project displays the NASA Astronomy Picture of the Day!
 
 ## Technologies
