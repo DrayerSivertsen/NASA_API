@@ -36,6 +36,7 @@ print(decodeapod)
 
 image_url = str(decodeapod['url'])
 name = decodeapod['explanation']
+title = str(decodeapod['title'])
 
 @app.route('/')
 def image():
@@ -43,7 +44,7 @@ def image():
 
 @app.route('/description')
 def des():
-    return render_template("index.html", des=name)
+    return render_template("description.html", explanation=name, title=title)
 
 
 
