@@ -1,0 +1,27 @@
+#!/usr/bin/env python3                        shabang line - common practice to show what will execute the command
+import urllib.request                         imports - give us access to code that we normally wouldnt have access to
+import json
+import webbrowser
+
+## Define APOD
+apodurl = 'https://api.nasa.gov/planetary/apod?'    this is where the picture of the day acutally exists
+mykey = 'api_key=DEMO_KEY'                          your NASA developer key (demo key - limit of 5 ip requests per day)
+
+## Call the webservice
+apodurlobj = urllib.request.urlopen(apodurl + mykey)  this is a api request and will bring the object from NASA
+                                                      to then be used locally (returns file like object)
+## read the file-like object
+apodread = apodurlobj.read()                         converts it from a file like object then to a JSON object
+                                                     
+
+## decode json to python data structure
+decodeapod = json.loads(apodread.decode('utf-8'))     we need a python object so we decode this into would would be like
+                                                      a python nested dictionary (lists, key pairs)
+
+## display our pythonic data
+print("/n/nConverted python data")
+print(decodeapod)
+
+## use chrome to open the HTTPS URL
+input('\nPress Enter to open NASA Picture of the Day in Chrome')
+webbrowser.open(decodeapod['url'])                  access the key named url and return the value
