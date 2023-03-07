@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3 # called a shabang line used to show how to execute, when user runs give file to python
 import urllib.request
 import json
 import webbrowser
