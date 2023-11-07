@@ -17,7 +17,7 @@ apodurl = 'https://api.nasa.gov/planetary/apod?'
 mykey = 'api_key=ZuohWEJ9pX59O6nuwvw0EvkYgN2EOdkkSZagtn7x'
 
 # Call the webservice
-apodurlobj = urllib.request.urlopen(apodurl + mykey)
+apodurlobj = urllib.request.urlopen(apodurl + mykey + "&date=2015-01-26")
 
 # read the file-like object
 apodread = apodurlobj.read()
