@@ -1,4 +1,4 @@
-<h1 align="center">NASA_API</h1>
+<h1 align="center">NASA APOD</h1>
 
 <p align="center">
   <img src="images/stars.gif" width="800" height="400">
