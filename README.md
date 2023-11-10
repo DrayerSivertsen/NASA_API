@@ -14,7 +14,7 @@ This project displays the NASA Astronomy Picture of the Day!
 * HTML/CSS
 * Flask Web Framework
 
-## Launch
+## How to Run
 To run this web application you must run 
 ```
 python3 nasaapi.py
