@@ -4,20 +4,22 @@
   <img src="images/stars.gif" width="800" height="400">
 </p>
 
-
 ## Introduction
 
-This project displays the NASA Astronomy Picture of the Day!
+Explore the wonders of space with the NASA Astronomy Picture of the Day (APOD) project! Each day, discover a captivating snapshot of the cosmos.
 
 ## Technologies
-* Python
-* HTML/CSS
-* Flask Web Framework
+- Python
+- HTML/CSS
+- Flask Web Framework
 
 ## How to Run
-To run this web application you must run 
+To launch this web application, first install flask using pip:
 ```
+pip install Flask
+```
+Then, execute the following commands:
+```
+cd nasa_api
 python3 nasaapi.py
 ```
-This will produce a link that can be opened in your web browser of choice.
-
